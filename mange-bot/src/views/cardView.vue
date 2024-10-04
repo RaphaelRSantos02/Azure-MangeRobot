@@ -3,7 +3,7 @@ import { useCart } from '@/stores/Cart';
 </script>
 
 <template>
-    <main>
+    <main id="cart-page">
         <table>
             <thead>
                 <th>Item</th>
