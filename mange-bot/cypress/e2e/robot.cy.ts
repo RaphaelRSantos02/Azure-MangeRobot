@@ -23,12 +23,10 @@ describe('testing home page', () => {
     
   })
 
-  it('testing translate button', () => {
-    cy.wait(3000)
+  it('testing translate button', () => {        
+    el.homeTitle().should("contain.text","Build now your Mange Bot!")
     el.flag().click()
-    el.homeTitle().should('exist')
-    
-    
+    el.homeTitle().should("contain.text","Construa agora seu Mange Bot!")
   })
   
 })
